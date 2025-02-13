@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/FoodDB');
+mongoose.connect('mongodb+srv://jaiswarakash04:admin@cluster0.g2hng.mongodb.net/Nutrify?retryWrites=true&w=majority&appName=Cluster0');
 
 const userSchema = new mongoose.Schema({
   onboardingCompleted: Boolean,
